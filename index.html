@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONETAPVFX | Video Editing Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Accent color for luxury vibe */
+    :root { --accent: #d4af37; }
+    body { font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 8px; background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-black text-gray-300 overflow-x-hidden">
+  <!-- ===================== Header / Navbar ===================== -->
+  <header class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-1 px-">
+      <a href="#" class="flex items-center gap-2">
+        <img src="alogo-removebg-preview.png" alt="ONETAPVFX Logo" class="h-[100px] w-auto select-none" />
+      </a>
+      <nav class="space-x-8 hidden md:block">
+        <a href="#about-me"class="hover:text-[var(--accent)] transition-colors">About Me</a>
+        <a href="#portfolio-section" class="hover:text-[var(--accent)] transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-[var(--accent)] transition-colors">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-gray-200 focus:outline-none text-2xl" aria-label="Open Menu">&#9776;</button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-black/90 px-6 pb-6">
+      <a href="#portfolio-section" class="block py-2 border-b border-gray-700 hover:text-[var(--accent)]">Portfolio</a>
+      <a href="#contact" class="block py-2 hover:text-[var(--accent)]">Contact</a>
+    </div>
+  </header>
+
+  <!-- ===================== Hero Section ===================== -->
+  <section class="relative flex items-center justify-center h-screen bg-[url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1740&q=80')] bg-cover bg-center">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-[var(--accent)] drop-shadow-lg tracking-wide">ONETAPVFX</h1>
+      <p class="mt-6 text-xl md:text-2xl max-w-xl mx-auto leading-relaxed">Professional Video Editing & Post‑Production Services</p>
+      <a href="#portfolio-section" class="inline-block mt-10 px-8 py-3 bg-[var(--accent)] text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-600 transition-colors">View My Work</a>
+    </div>
+  </section>
+  
+<!-- ===================== About Me Section ===================== -->
+<section id="about" class="py-24 bg-black px-6 lg:px-24">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-[var(--accent)] mb-6">About Me</h2>
+    <p class="text-lg text-gray-400 leading-relaxed">
+      Hi, I’m a video editor with over 7 years of experience turning raw footage into polished, impactful stories. I’ve worked with a company based in Dubai and had the opportunity to edit a professional cinematic short film — one of many projects that reflect my passion for visual storytelling. Along with editing, I’m also skilled at capturing high-quality video and photography that sets the foundation for great content.<br><br>
+    </p>
+    <p class="text-lg text-gray-400 leading-relaxed text-left">
+      • 7+ years of hands-on video editing experience <br>
+      • Proficient in Adobe Premiere Pro, Vegas Pro, and DaVinci Resolve <br>
+      • Edited a cinematic short film with a professional production team <br>
+      • Worked with an international company based in Dubai for their social media account <br>
+      • trong skills in color grading, sound design, and visual pacing <br>
+      • Great eye for capturing stunning visuals, whether shooting video or photography <br>
+    </p>
+  </div>
+</section>
+
+  <!-- ===================== Portfolio Section ===================== -->
+  <div id="portfolio-section" class="py-24 bg-black px-6 lg:px-24">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-[var(--accent)] mb-6">Portfolio Details</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">Here are some examples from my previous work.</p>
+    </div>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Project Card 1 -->
+      <div class="rounded-xl overflow-hidden bg-gray-800 shadow-lg">
+        <video
+  class="w-full aspect-video"
+  src="dubaiclip.mp4"
+  controls
+  muted
+  preload="metadata"
+></video>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[var(--accent)]">Commercial Edit – For the company in Dubai</h3>
+          <p class="text-sm mt-2 text-gray-300">Kept the video basic as the company requested and add some chill musics with smooth transitions.</p>
+        </div>
+      </div>
+      <!-- Project Card 2 -->
+      <div class="rounded-xl overflow-hidden bg-gray-800 shadow-lg">
+        <video
+  class="w-full aspect-video"
+  src="the call intro.mp4"
+  controls
+  muted
+  preload="metadata"
+  poster="the call banner.png"
+></video>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[var(--accent)]">Short Film – The Call</h3>
+          <p class="text-sm mt-2 text-gray-300">tried to make short film filled with tension, unexpected twists, and intense moments. Every second counts as the story unfolds in a gripping and adrenaline-pumping sequence.</p>
+        </div>
+      </div>
+      <!-- Project Card 3 -->
+      <div class="rounded-xl overflow-hidden bg-gray-800 shadow-lg">
+        <video
+  class="w-full aspect-video"
+  src="ISABELLE ❤ (Valorant Montage) - Trim232 - Trim - Trim.mp4"
+  controls
+  muted
+  preload="metadata"
+  poster="isabelle banner.jpg"
+></video>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[var(--accent)]">Game Edit – Valorant</h3>
+          <p class="text-sm mt-2 text-gray-300">Did game edit with crazy effects and transitions synchronized with the music perfectly</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== Contact Section ===================== -->
+  <section id="contact" class="py-16 bg-black px-6 lg:px-24">
+    <h2 class="text-3xl lg:text-4xl font-semibold text-[var(--accent)] mb-10">Contact</h2>
+    <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <p>Feel free to get in touch for projects and collaborations.</p>
+        <ul class="space-y-3 text-lg">
+          <li><span class="font-semibold text-[var(--accent)]">Email:</span> <a href="mailto:you@example.com" class="hover:underline">msoldiermedia@gmail.com</a></li>
+          <li><span class="font-semibold text-[var(--accent)]">Instagram:</span> onetapvfxx</li>
+          <li><span class="font-semibold text-[var(--accent)]">Office:</span> Astana, Kazakhstan</li>
+        </ul>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" aria-label="Instagram" class="text-2xl hover:text-[var(--accent)]"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" class="text-2xl hover:text-[var(--accent)]"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="YouTube" class="text-2xl hover:text-[var(--accent)]"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/{mqabnvwl}" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 rounded-2xl bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 rounded-2xl bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]" />
+        <textarea name="message" rows="6" placeholder="Your Message" required class="w-full p-4 rounded-2xl bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"></textarea>
+        <button type="submit" class="px-8 py-4 bg-[var(--accent)] text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-600 transition-colors w-full">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>&copy; <span id="year"></span> ONETAPVFX. All rights reserved.</p>
+  </footer>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Update year automatically
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      }
+    });
+  </script>
+</body>
+</html>
